@@ -13,7 +13,7 @@ public class NotificationResponse {
 
     private UUID id;
 
-    private String recipent;
+    private String recipient;
 
     private String message;
 

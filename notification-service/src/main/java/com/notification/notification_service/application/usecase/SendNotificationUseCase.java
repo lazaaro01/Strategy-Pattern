@@ -16,10 +16,10 @@ public class SendNotificationUseCase {
     private final NotificationRepository repository;
     private final NotificationProducer producer;
 
-    public void execute(NotificationRequest request) {
+    public Notification execute(NotificationRequest request) {
 
         Notification notification = Notification.builder()
-                .recipient(request.getRecipent())
+                .recipient(request.getRecipient())
                 .message(request.getMessage())
                 .channel(request.getChannel())
                 .status("PENDING")
