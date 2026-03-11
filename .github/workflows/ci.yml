@@ -54,8 +54,3 @@ jobs:
           SPRING_DATASOURCE_PASSWORD: 123455
           SPRING_RABBITMQ_HOST: localhost
           SPRING_DATA_REDIS_HOST: localhost
-
-      - name: Build Docker image
-        run: |
-          cp notification-service/target/notification-service.jar .
-          docker build . -t notification-service:latest
